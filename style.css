@@ -11,3 +11,11 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
+h1 {
+    color: Crimson;
+}
+
+p {
+    color: Crimson;
+}
