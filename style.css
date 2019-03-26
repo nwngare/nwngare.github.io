@@ -8,17 +8,17 @@ html {
 }
 
 body {
-	background-color: DarkSlateBlue;
+	background-color: DarkSlateGray;
     display: table-cell;
     vertical-align: middle;
 }
 
 h1 {
-    color: Crimson;
+    color: Tomato;
     font-family: Roboto, sans-serif;
 }
 
 p {
-    color: Crimson;
+    color: Tomato;
     font-family: Roboto, sans-serif;
 }
