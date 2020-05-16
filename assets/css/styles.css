@@ -1,0 +1,14 @@
+/* || GENERAL STYLES*/
+/* Handle basic element styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+}
+
+/* Handle specific elements nested in the DOM */
+h1, h2 {
+    color: #ee3e80;
+}
+p {
+    color: #665544;
+}
