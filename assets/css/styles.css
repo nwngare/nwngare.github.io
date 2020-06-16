@@ -8,37 +8,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* || GRID LAYOUT 
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-}
-
-nav {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-}
-
-section {
-    height: 100vh;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-}
-*/
-
 /* || GRID LAYOUT */
 
 .main-header {
@@ -87,7 +56,7 @@ footer {
     }
 }
 
-  @media (min-width: 700px) {
+@media (min-width: 700px) {
     .wrapper {
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas:
@@ -104,4 +73,8 @@ footer {
 /* Handle specific elements nested in the DOM */
 header, footer {
     text-align: center;
+}
+
+#welcome, #about, #projects, #contact {
+    height: 100vh;
 }
