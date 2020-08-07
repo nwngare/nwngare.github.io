@@ -4,77 +4,31 @@ html {
 
 /* || GENERAL STYLES */
 /* Handle basic element styling */
-body {
+html, body {
+    height: 100%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-/* || GRID LAYOUT */
-
-.main-header {
-    grid-area: header;
-}
-
-.content {
-    grid-area: content;
-}
-
-.main-navigation {
-    grid-area: navigation;
-}
-
-.side {
-    grid-area: sidebar;
-}
-
-.main-footer {
-    grid-area: footer;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-      "navigation"
-      "header"
-      "content"
-      "sidebar"
-      "footer";
-}
-
-@media (min-width: 500px) {
-    .wrapper {
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas:
-        "navigation     navigation"
-        "header         header"
-        "sidebar        content"
-        "footer         footer";
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-    }
-}
-
-@media (min-width: 700px) {
-    .wrapper {
-      grid-template-columns: 1fr 4fr 1fr;
-      grid-template-areas:
-        "navigation navigation navigation"
-        "header     header     header"
-        "sidebar    content    content"
-        "footer     footer     footer"
-     }
-     nav ul {
-       flex-direction: column;
-     }
-}
-
-/* Handle specific elements nested in the DOM */
-header, footer {
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../../images/landscape-photography-of-wild-trees-over-mountain-861339.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     text-align: center;
+    color: white;
 }
 
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+/* || SECTIONS */
 #welcome, #about, #projects, #contact {
-    height: 100vh;
+    min-height: 100vh;
 }
